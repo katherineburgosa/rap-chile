@@ -9,5 +9,10 @@ async function card() {
 
   donde.innerHTML = '<div class="row">' + tarjetas.join("") + '</div>';
 }
-
+async function image() {
+  var imaginacion = document.querySelectorAll("img");
+  imaginacion.foreach((x) => {
+		imaginacion[x].setAttribute("alt", "imagen linda");
+    });
+}
 card().catch((error) => console.error(error));
