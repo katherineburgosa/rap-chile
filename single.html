@@ -326,8 +326,9 @@ h5{
 
   document.querySelector("#image").innerHTML = '<div class="text-center" id="sol"><img class="col-5 img-responsive rounded" src="' + data[n].medio + '" alt="' + data[n].alt1 + '"></div>';
   document.querySelector("#otro").innerHTML = '<div class="container"><div class="row"><div class="col-md-8 mx-auto text-danger "> <h5 class="text-center">' + data[n].titulo2 + '</h5><p>' + data[n].escrito2 + '</p></div></div></div>';
-  document.querySelector("#bak").innerHTML = '<div class="text-center" id="cas" style="background: url(\'' + data[n].medio + '\') center center no-repeat;width: 100%;background-size:cover;"></div>';
-
+  if (n === 0 || n === 1 || n === 2 || n === 3|| n === 4 || n === 5|| n === 10) { 
+ document.querySelector("#bak").innerHTML = '<div class="text-center" id="cas" style="background: url(\'' + data[n].medio + '\') center center no-repeat;width: 100%;background-size:cover;"></div>';
+  }
   
   if (n === 0 || n === 1 || n === 2 || n === 3|| n === 4 || n === 5|| n === 10) {
     document.querySelector("#inte").innerHTML = '<div class="row d-flex justify-content-center align-items-center h-100"><div class="col col-md-9 col-lg-7 col-xl-5"><div class="card-body p-4"><div class="d-flex text-black"><div class="flex-shrink-0"><img src="' + data[n].monoun + '" alt="' + data[n].altdos + '" style="width: 160px; border-radius: 100px;"></div><div class="flex-grow-1 ms-3"><h5 class="mb-1">' + data[n].tit + '</h5><p>' + data[n].subtit + '</p><p class="mb-1 pb-1">' + data[n].des + '</p></div></div></div></div><div class="row d-flex justify-content-center align-items-center h-40"><div class="col col-md-9 col-lg-7 col-xl-5"><div class="card-body p-4"><div class="d-flex text-black"><div class="flex-shrink-0"><img src="' + data[n].monodo + '" alt="' + data[n].altdo + '" style="width: 160px; border-radius: 100px;"></div><div class="flex-grow-1 ms-3"><h5 class="mb-1">' + data[n].titdo + '</h5><p>' + data[n].subtitdo + '</p><p class="mb-1 pb-1">' + data[n].desdo + '</p></div></div></div></div>';
